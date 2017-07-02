@@ -1,0 +1,1 @@
+define(["lib/backbone","lib/zepto"],function(Backbone,$){var w=$(window).width()/2-9,ImgModel=Backbone.Model.extend({initialize:function(){var h=w/this.attributes.width*this.attributes.height;this.attributes.realwidth=w,this.attributes.realheight=h}});return ImgModel});

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,width=device-width">
+	<title>叶子</title>
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/css/iconfont.css">
+</head>
+<body style="display:none;">
+	<div id="app">
+		<section id="list" class="list">
+		<header class="header">
+			<div class="go-back"><span class="arrow"></span></div>
+			<i class="login"></i>
+			<h1>叶子</h1>
+			<p>专注收集建筑行业的美丽碎片</p>
+		</header>
+		<div class="search">
+			<input type="text" placeholder="搜索你想要的图片">
+			<span class="icon"></span>
+		</div>
+		<div class="choose">
+		<ul class="nav clearfix first">
+			<li data-type="1">建筑</li>
+			<li data-type="2">景观</li>
+			<li data-type="3">生态</li>
+		</ul>
+		<ul class="nav clearfix second">
+			<li data-type="4">旅游</li>
+			<li data-type="5">规划</li>
+			<li data-type="6">室内</li>
+		</ul>
+		</div>
+		<div class="image-container">
+			<div class="image-left-container">			
+			</div>
+			<div class="image-right-container">
+			</div>
+		</div>
+		<div class="go-top"><p>返回</p><p>顶部</p></div>
+	</section>	
+	<section id="pic" class="pic">
+		<div class="part1"></div>
+		
+	</section>
+	</div>
+	<script type="text/template" id="tpl_pic">
+       <div class="container" style="<%=style%>"><img src="<%=src%>"></div>
+       <header>
+           <div class="go-back">
+               <i class="iconfont icon-back"></i>
+           </div>
+            <div class="more">
+               <i class="iconfont icon-caidan1"></i>
+           </div>
+          <h1><%=title%></h1>
+       </header>
+       <div class="part2">
+	       <div class="text"><%=text%></div>
+	       <div class="bottom">
+		       <i class="iconfont icon-collect_line save"></i><span>收藏</span><i class="iconfont icon-ganxingqu like"></i><span>喜欢</span>
+	       </div>
+	        <ul class="menu">
+				<li class="save">保存图片</li>
+				<li class="store">收藏</li>	
+				<li class="share">分享</li>
+				<li class="cancel">取消</li>	
+		   </ul>
+       </div>
+
+
+	</script>
+	<script type="text/javascript" src="/js/lib/require.js" data-main="js/app.js"></script>
+</body>
+</html>

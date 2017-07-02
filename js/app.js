@@ -1,0 +1,1 @@
+require.config({shim:{"lib/zepto":{exports:"$",deps:[]},"lib/zepto.touch":{exports:"$",deps:["lib/zepto"]},"lib/underscore":{exports:"_",deps:[]},"lib/backbone":{exports:"Backbone",deps:["lib/zepto","lib/underscore"]}},map:{"*":{css:"lib/css"}}}),require(["route/route","css!reset.css"],function(route){route()});
